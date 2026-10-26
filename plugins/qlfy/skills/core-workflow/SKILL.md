@@ -17,6 +17,18 @@ Read the persona skill that matches the user's goal too: `recruiter` (hiring), `
    - `find_contact` for email addresses, only for people the user wants to contact.
 4. To start from companies, call `search_companies` first, then pass the companies it returns to `overview` as `companies`, as they are.
 
+## One step per turn
+
+Go one step at a time with the user, even when the first message asks for everything ("find X and check the best 5"):
+
+1. `overview` (free). Stop: show the summary, the count and the claims, and ask whether to search, change the brief or change the claims.
+2. Once the user agrees, `search` for one page. Stop: show the cards as a short numbered list and ask who to look at more closely.
+3. `enrich_profile`, `check_claims` or `find_contact` only for the people the user picked in this conversation, and only the tool they asked for. Stop after each call and show the result.
+
+- Never pick people yourself for a paid step ("the best 5"). Suggest a few with the reason from their card, and let the user choose.
+- "Yes", "go ahead" or naming people is the go-ahead for that one step, not for the steps after it.
+- A next page, an enrich, a check and a contact lookup are each paid: one paid call per user turn, unless the user asked for that exact combination for people they named.
+
 ## One search, one session
 
 - Every result carries a `session_id`. Pass it to every later call for the same search: `overview`, `search`, `enrich_profile`, `check_claims`, `find_contact` and `search_companies`.
