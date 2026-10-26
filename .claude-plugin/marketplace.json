@@ -1,0 +1,15 @@
+{
+  "name": "crayonlabs",
+  "description": "CrayonLabs plugins for Claude Code.",
+  "owner": {
+    "name": "CrayonLabs"
+  },
+  "plugins": [
+    {
+      "name": "qlfy",
+      "source": "./plugins/qlfy",
+      "description": "Find people from a brief: the qlfy connector plus its skills (workflow, system rules, recruiter, event, GTM and VC personas).",
+      "keywords": ["people-search", "recruiting", "sourcing", "gtm", "events", "venture", "mcp"]
+    }
+  ]
+}

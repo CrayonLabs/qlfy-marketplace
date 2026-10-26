@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "qlfy": {
+      "type": "http",
+      "url": "https://mcp.qlfy.ai/mcp"
+    }
+  }
+}
