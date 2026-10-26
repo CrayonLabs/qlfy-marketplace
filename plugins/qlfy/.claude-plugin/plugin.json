@@ -1,11 +1,19 @@
 {
   "name": "qlfy",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Find people from a brief: the qlfy connector plus its skills (workflow, system rules, recruiter, event, GTM and VC personas).",
   "author": {
     "name": "CrayonLabs"
   },
   "homepage": "https://github.com/CrayonLabs/qlfy-marketplace",
   "repository": "https://github.com/CrayonLabs/qlfy-marketplace",
-  "keywords": ["people-search", "recruiting", "sourcing", "gtm", "events", "venture", "mcp"]
+  "keywords": [
+    "people-search",
+    "recruiting",
+    "sourcing",
+    "gtm",
+    "events",
+    "venture",
+    "mcp"
+  ]
 }
