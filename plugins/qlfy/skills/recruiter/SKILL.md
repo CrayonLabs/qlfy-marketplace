@@ -8,8 +8,16 @@ description: Finding candidates to hire - what fit means for a role, default cla
 ## Before the first search
 
 - Call `overview` with `purpose: hire`. Put the must-haves in the brief as requirements ("must have led a team of 10+") and the nice-to-haves as preferences ("ideally ex-fintech"), so the query filters on the first and ranks on the second.
-- Ask for anything missing that changes who matches: the location (or remote), the level, and the employers to leave out.
 - When the user names target employers, call `search_companies` or pass them as `companies`.
+
+## Questions after the overview
+
+Ask only the ones the brief leaves open (core-workflow, "After the overview"):
+
+- **Level:** individual contributor, lead or manager, head of the function.
+- **Location:** the city only, the wider area or country, or remote.
+- **Employers to leave out:** "None" or "I'll name them" (clients, the user's own company, off-limits employers go in `exclude_companies`).
+- **A noisy title** the query includes, when the overview summary or the first page shows one: drop it (recommended) or keep it.
 
 ## What fit means
 

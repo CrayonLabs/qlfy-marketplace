@@ -8,8 +8,16 @@ description: Finding people to invite to an event or dinner - seniority and topi
 ## Before the first search
 
 - Call `overview` with `purpose: invite`. Put the city, the seniority ("VP Product, CPO") and the kind of company ("Series B-D startups", "fintechs") in the brief as requirements.
-- Ask for the city if the user didn't give it, and how many seats there are.
 - "No job seekers" becomes `is_working = true` in the query; intentions can't be checked.
+
+## Questions after the overview
+
+Ask only the ones the brief leaves open (core-workflow, "After the overview"):
+
+- **City:** the city only, or the wider area.
+- **Seniority:** C-level and VP only, or heads and directors too.
+- **Seats:** how many people to invite (the list shows about twice as many).
+- **Kind of company,** when the brief doesn't say: startups, scale-ups or large companies.
 
 ## What fit means
 
