@@ -11,6 +11,15 @@ description: Finding buyers at target accounts for sales or partnerships - the i
 - Start from accounts when the user has them or describes them: `search_companies` with the profile, then `overview` with `purpose: target` and the companies as `companies`.
 - Otherwise call `overview` with `purpose: target` and put the buyer's title, the region and the kind of company in the brief as requirements.
 
+## Questions after the overview
+
+Ask only the ones the brief leaves open (core-workflow, "After the overview"):
+
+- **Buyer:** the decision maker only, or the decision maker plus the people around them.
+- **Accounts:** a list the user has, companies from `search_companies`, or any company that fits the profile.
+- **Company size or region,** when the ideal customer profile leaves it open.
+- **Why now:** any timing, or only people new in the role or at companies that just raised or are hiring.
+
 ## What fit means
 
 - The buyer or the people who influence the purchase: the owner of the problem the product solves, one level above and one below.

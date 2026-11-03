@@ -8,8 +8,16 @@ description: Finding founders to invest in - repeat founders, past exits, what t
 ## Before the first search
 
 - Call `overview` with `purpose: invest`. Put the sector ("climate tech"), the place and "founder" in the brief as requirements; past exits as a requirement only when the user asks for them.
-- Ask for the stage the fund invests in and the sectors, if not given.
 - The overview's count can be small: founders with an exit in one city and sector are few. Say so, and offer to widen the place or the sector rather than dropping the founder or exit requirement silently.
+
+## Questions after the overview
+
+Ask only the ones the brief leaves open (core-workflow, "After the overview"):
+
+- **Stage:** pre-seed and seed, Series A, or later.
+- **Sector,** when the brief is broad: name two or three likely ones as options.
+- **Track record:** any founder, repeat founders only, or founders with an exit.
+- **Place:** the city or country only, or wider.
 
 ## What fit means
 
