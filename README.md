@@ -4,7 +4,7 @@ Claude Code plugins from CrayonLabs.
 
 | Plugin | What it adds |
 | --- | --- |
-| `qlfy` | The qlfy people-search connector (`https://mcp.qlfy.ai/mcp`, sign in with Google) and its skills: `system-rules`, `core-workflow` and the `recruiter`, `event`, `gtm` and `vc-founders` personas |
+| `qlfy` | The qlfy people-search connector (`https://mcp.qlfy.ai/mcp`, sign in with Google) and its skills: `system-rules`, `core-workflow`, the `people-recipes` and `company-recipes` query recipes, and the `recruiter`, `event`, `gtm` and `vc-founders` personas |
 
 ## Install
 

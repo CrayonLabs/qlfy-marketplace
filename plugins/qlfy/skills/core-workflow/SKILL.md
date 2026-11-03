@@ -7,6 +7,8 @@ description: How to find people with these tools - the order to call them, how t
 
 Read the persona skill that matches the user's goal too: `recruiter` (hiring), `event` (inviting people), `gtm` (selling) or `vc-founders` (investing). Pass the same goal to `overview` as `purpose`.
 
+To write or edit a query, read `people-recipes`: how each kind of requirement becomes filters, boosts or claims. When the brief names companies or describes a kind of company, read `company-recipes` too.
+
 ## Tool order
 
 1. `overview` with the user's brief (and `purpose` and `companies` when known). It is free: it returns a summary, about how many people match, up to 4 claims and a `query`. Show the summary, the count and the claims, and ask whether to go ahead. The summary says which parts of the brief only rank people or are left to the claims; say that to the user too.
@@ -56,7 +58,7 @@ The same person given twice, or as both a URL and an id, is looked up once. Valu
 
 ## Refining
 
-- To change the search, edit the `query` (add, drop or change one condition) and call `search` again, or call `overview` again with a revised brief.
+- To change the search, edit the `query` (add, drop or change one condition) and call `search` again, or call `overview` again with a revised brief. `people-recipes` has the recipe for each kind of change.
 - For the next page of the same query, pass the `page_token` from the last page and the `session_id`.
 
 ## Batch limits
