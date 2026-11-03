@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.4.0](https://github.com/CrayonLabs/qlfy-marketplace/compare/v0.3.0...v0.4.0) (2026-11-03)
+
+
+### Features
+
+* short reply and clickable questions after the overview (QLF-181) ([#6](https://github.com/CrayonLabs/qlfy-marketplace/issues/6)) ([022853f](https://github.com/CrayonLabs/qlfy-marketplace/commit/022853fcfe87e43b1767fb82607f291bf6feec8e))
+
 ## [0.3.0](https://github.com/CrayonLabs/qlfy-marketplace/compare/v0.2.0...v0.3.0) (2026-11-03)
 
 
