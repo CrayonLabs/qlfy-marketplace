@@ -10,6 +10,16 @@ Read the persona skill that matches the user's goal too: `recruiter` (hiring), `
 
 To write or edit a query, read `people-recipes`: how each kind of requirement becomes filters, boosts or claims. When the brief names companies or describes a kind of company, read `company-recipes` too.
 
+## Talking to the user
+
+The user is not technical. These rules hold on every turn and come before any other skill's wording.
+
+- **Keep the machinery hidden.** Never mention skills, personas, recipes, tools, queries, filters, boosts, fields, sessions, page tokens or `purpose`, and never say which skill you are reading. Say "things to check" instead of "claims", and "the search" instead of "the query".
+- **Short replies.** At most three short lines of text per turn, plus the people list when there is one. No headings, no explaining how you search, no recap of the brief.
+- **Ask with clickable choices.** When you have a tool that shows clickable choices or a form (AskUserQuestion in Claude Code, or the equivalent in the Claude apps), every question goes through it: never ask in prose when it is available. Use short labels, mark one option "(Recommended)" and list it first.
+- **Ask only when it matters.** Ask only what changes who matches or what gets paid for. Pick a sensible default for the rest and name it in a few words ("Dubai only").
+- **Search before asking.** `overview` is free, so run it on the brief as given and ask your questions after it. Ask first only when the brief doesn't say what kind of person to find.
+
 ## Tool order
 
 1. `overview` with the user's brief (and `purpose` and `companies` when known). It is free: it returns a summary, about how many people match, up to 4 claims and a `query`. Reply as "After the overview" below says.
@@ -25,7 +35,7 @@ To write or edit a query, read `people-recipes`: how each kind of requirement be
 Go one step at a time with the user, even when the first message asks for everything ("find X and check the best 5"):
 
 1. `overview` (free). Stop: a short summary, then the choices ("After the overview").
-2. Once the user agrees, `search` for one page. Stop: show the cards as a short numbered list and ask who to look at more closely.
+2. Once the user agrees, `search` for one page. Stop: show the cards as a short numbered list (one line each), then ask the next step with clickable choices: "Check some of them" (the user types the numbers), "Show the next 20", "Change the search".
 3. `enrich_profile`, `check_claims` or `find_contact` only for the people the user picked in this conversation, and only the tool they asked for. Stop after each call and show the result.
 
 - Never pick people yourself for a paid step ("the best 5"). Suggest a few with the reason from their card, and let the user choose.
@@ -38,12 +48,12 @@ Keep the reply short and let the choices do the work.
 
 1. **Two or three lines of text:** who the query finds, about how many, and that nothing has been charged. Name a default you picked in a few words ("Abu Dhabi only"). Don't list the titles, boosts, fields or the query; the user can ask.
 2. **At most one caveat,** and only one that changes how far the list can be trusted. The overview summary says which parts of the brief only rank people or are left to claims: "Pharma background isn't filtered; I'll check it on the people you pick."
-3. **Then the choices.** If you have a tool that shows the user clickable choices (AskUserQuestion in Claude Code), use it; it takes up to 4 questions with 2 to 4 options each, and the user can always type their own answer.
+3. **Then the choices,** with the clickable choices tool ("Talking to the user"). AskUserQuestion takes up to 4 questions with 2 to 4 options each, and the user can always type their own answer.
    - Question 1 is the next step. Its first option is "Run the first 20 (Recommended)"; the second is "Change the search first".
    - Questions 2 to 4 are the open choices that change who matches, most important first. The persona skill lists the usual ones. Ask only what the brief leaves open and what would change the count; pick a default for the rest. Every question has one option marked "(Recommended)", listed first.
    - Keep what the user asked for. A widening or narrowing of their own words (another city, other titles) is an option, never the recommended one and never applied before they pick it. When the count is very small, you may run one more free `overview` to show the count a wider option would give.
-   - If a slot is left, add a multi-select question for which claims to check later, the most decisive claim first. Otherwise don't list the claims now; offer them when the user picks people to check.
-   - Without such a tool, ask questions 2 to 4 in text: a numbered list, one line each with its options and the recommended one marked, then "Reply 'go' to run the first 20 with the recommended options."
+   - If a slot is left, add a multi-select question for which things to check later, the most decisive first, each in plain words. Otherwise don't list them now; offer them when the user picks people to check.
+   - Only when no such tool exists, ask questions 2 to 4 in text: a numbered list, one line each with its options and the recommended one marked, then "Reply 'go' to run the first 20 with the recommended options."
    - A precise brief with nothing open gets only question 1.
 4. **Then act on the answers.** Never pay for a page on a query whose count the user hasn't seen.
    - "Run", and no answer changes the query: `search` for one page.

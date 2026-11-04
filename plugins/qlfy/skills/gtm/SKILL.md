@@ -8,7 +8,7 @@ user-invocable: false
 
 ## Before the first search
 
-- Ask what they sell and who buys it (the title and the team), and the ideal customer profile: industry, size, region.
+- You need what they sell, who buys it (the title and the team) and the ideal customer profile (industry, size, region). Ask only for what the brief leaves out and you can't default, with clickable choices (core-workflow, "Talking to the user").
 - Start from accounts when the user has them or describes them: `search_companies` with the profile, then `overview` with `purpose: target` and the companies as `companies`.
 - Otherwise call `overview` with `purpose: target` and put the buyer's title, the region and the kind of company in the brief as requirements.
 
