@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.5.1](https://github.com/CrayonLabs/qlfy-marketplace/compare/v0.5.0...v0.5.1) (2026-11-04)
+
+
+### Bug Fixes
+
+* always show the people list before asking who to check ([#12](https://github.com/CrayonLabs/qlfy-marketplace/issues/12)) ([c892465](https://github.com/CrayonLabs/qlfy-marketplace/commit/c892465c3dcc92667361d2c0a1496910344a5475))
+
 ## [0.5.0](https://github.com/CrayonLabs/qlfy-marketplace/compare/v0.4.0...v0.5.0) (2026-11-04)
 
 
