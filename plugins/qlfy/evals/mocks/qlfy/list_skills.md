@@ -1,0 +1,1 @@
+{"skills":[{"name":"find-people","description":"Find people from a plain-language brief with the qlfy tools."},{"name":"people-recipes","description":"How to write each kind of requirement as a people query."},{"name":"company-recipes","description":"How to start from companies."}]}

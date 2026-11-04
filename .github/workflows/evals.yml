@@ -1,0 +1,40 @@
+name: evals
+
+on:
+  pull_request:
+    paths:
+      - plugins/qlfy/**
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  evals:
+    runs-on: ubuntu-latest
+    env:
+      ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+    steps:
+      - name: Skip without an API key
+        if: env.ANTHROPIC_API_KEY == ''
+        run: echo "::notice::ANTHROPIC_API_KEY is not set; evals skipped"
+      - uses: actions/checkout@v4
+        if: env.ANTHROPIC_API_KEY != ''
+      - uses: actions/setup-node@v4
+        if: env.ANTHROPIC_API_KEY != ''
+        with:
+          node-version: 22
+      - if: env.ANTHROPIC_API_KEY != ''
+        run: npm install -g @anthropic-ai/claude-code
+      - if: env.ANTHROPIC_API_KEY != ''
+        run: >-
+          claude plugin eval plugins/qlfy
+          --trust-plugin --ablation none --no-publish
+          --max-cost-usd 3 --json eval-results.json
+      - uses: actions/upload-artifact@v4
+        if: always() && env.ANTHROPIC_API_KEY != ''
+        with:
+          name: eval-results
+          path: |
+            eval-results.json
+            plugins/qlfy/evals/results/

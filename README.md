@@ -45,6 +45,7 @@ plugins/qlfy/
   .claude-plugin/plugin.json      name, version, description
   .mcp.json                       the connector URL
   skills/<name>/SKILL.md          the skills
+  evals/                          eval cases, graders and qlfy server mocks
 ```
 
 The skills are also the server's: `search-mcp` mounts this repository as a git submodule and serves the same files through `list_skills` and `get_skill`, for clients that do not load plugins.
@@ -58,4 +59,7 @@ Check changes with:
 ```bash
 claude plugin validate .
 claude plugin validate ./plugins/qlfy
+claude plugin eval plugins/qlfy --ablation none
 ```
+
+CI runs both validations on every pull request (`validate`). The `evals` workflow runs the eval suite on pull requests that touch the plugin when the `ANTHROPIC_API_KEY` secret is set; the qlfy server is replaced by the mocks in `plugins/qlfy/evals/mocks/`, so no sign-in is needed. The cases check that a first search reads one skill, never calls `get_skill`, stops after the free overview with a short reply, and that a page reply lists every person.
