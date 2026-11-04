@@ -1,6 +1,7 @@
 ---
 name: event
 description: Finding people to invite to an event or dinner - seniority and topic fit, the city, a mix across companies and no job seekers. Read it with core-workflow when the user is inviting people.
+user-invocable: false
 ---
 
 # Event invitations

@@ -1,6 +1,7 @@
 ---
 name: vc-founders
 description: Finding founders to invest in - repeat founders, past exits, what they build now and how early it is. Read it with core-workflow when the user is investing.
+user-invocable: false
 ---
 
 # VC: founders

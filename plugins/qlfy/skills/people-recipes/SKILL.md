@@ -1,6 +1,7 @@
 ---
 name: people-recipes
 description: How to write each kind of requirement as a people query - titles, employers, kind of company, location, experience, education, skills, languages, founders, recent moves, free text and small local businesses - with the groups that tie facts to one job or one entry, and what to leave to claims. Read it before editing a query, and when the overview's query misses part of the brief.
+user-invocable: false
 ---
 
 # People query recipes

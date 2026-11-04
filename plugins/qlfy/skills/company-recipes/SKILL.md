@@ -1,6 +1,7 @@
 ---
 name: company-recipes
 description: How to start from companies - naming a known company, firmographics, what a company sells, funding and investors, growth and hiring, technology, executive moves, talent flow, workforce, traffic and news, location by distance - and how to get from the companies to their people. Read it when the brief names companies or describes a kind of company.
+user-invocable: false
 ---
 
 # Company recipes
