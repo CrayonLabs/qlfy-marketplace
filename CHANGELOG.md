@@ -1,5 +1,17 @@
 # Changelog
 
+## [0.5.0](https://github.com/CrayonLabs/qlfy-marketplace/compare/v0.4.0...v0.5.0) (2026-11-04)
+
+
+### Features
+
+* short replies and clickable questions on every turn ([#9](https://github.com/CrayonLabs/qlfy-marketplace/issues/9)) ([480743b](https://github.com/CrayonLabs/qlfy-marketplace/commit/480743b6bee8841162936ddada0a6356efeb8e00))
+
+
+### Bug Fixes
+
+* hide internal skills from the slash menu ([#8](https://github.com/CrayonLabs/qlfy-marketplace/issues/8)) ([7e49700](https://github.com/CrayonLabs/qlfy-marketplace/commit/7e49700bd14fa6add77696975b91497a2f53214a))
+
 ## [0.4.0](https://github.com/CrayonLabs/qlfy-marketplace/compare/v0.3.0...v0.4.0) (2026-11-03)
 
 
