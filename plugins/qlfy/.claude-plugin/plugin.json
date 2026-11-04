@@ -1,7 +1,7 @@
 {
   "name": "qlfy",
   "version": "0.5.1",
-  "description": "Find people from a brief: the qlfy connector plus its skills (workflow, system rules, people and company query recipes, recruiter, event, GTM and VC personas).",
+  "description": "Find people from a plain-language brief: candidates to hire, guests to invite, buyers to sell to and founders to back.",
   "author": {
     "name": "CrayonLabs"
   },
