@@ -1,6 +1,7 @@
 ---
 name: gtm
 description: Finding buyers at target accounts for sales or partnerships - the ideal customer profile, why now, and 2 to 4 contacts per account. Read it with core-workflow when the user is selling.
+user-invocable: false
 ---
 
 # Go-to-market

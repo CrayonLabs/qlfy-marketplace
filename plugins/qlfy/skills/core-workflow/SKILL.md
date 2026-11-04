@@ -1,6 +1,7 @@
 ---
 name: core-workflow
 description: How to find people with these tools - the order to call them, how to keep one search in one session, how to refine and page, and the batch limits. Read it before the first search in a conversation.
+user-invocable: false
 ---
 
 # Core workflow

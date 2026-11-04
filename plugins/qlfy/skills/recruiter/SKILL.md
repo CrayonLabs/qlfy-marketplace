@@ -1,6 +1,7 @@
 ---
 name: recruiter
 description: Finding candidates to hire - what fit means for a role, default claims, who to leave out and how to show the list. Read it with core-workflow when the user is hiring.
+user-invocable: false
 ---
 
 # Recruiter
