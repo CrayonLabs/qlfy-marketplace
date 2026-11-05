@@ -59,3 +59,5 @@ Check changes with:
 claude plugin validate .
 claude plugin validate ./plugins/qlfy
 ```
+
+CI runs both on every pull request (`validate`).
