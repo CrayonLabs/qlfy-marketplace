@@ -6,7 +6,7 @@ user-invocable: false
 
 # People query recipes
 
-One recipe per kind of requirement: which fields to use, how they match, where they fail silently, and what to turn into a claim instead. Read core-workflow first; this skill is about the `query` itself.
+One recipe per kind of requirement: which fields to use, how they match, where they fail silently, and what to turn into a claim instead. Read find-people first; this skill is about the `query` itself.
 
 ## The query
 
@@ -144,7 +144,7 @@ Example: associate lawyers in Singapore at law firms, not partners, counsel or t
   {"field": "school_country", "type": "in", "value": ["GB", "IE"]}]}
 ```
 
-- "A top university": `school_rank` `>=` 90 (0 to 100). Raise or lower it to size the pool, and say the cut-off to the user.
+- "A top university": `school_rank` `>=` 90 (0 to 100). Raise or lower it to size the pool, and tell the user the cut-off in plain words ("top 10% of universities").
 - A bachelor's requirement has too many forms (BA, BS, BSc, B.Tech, Bachelor of Engineering): leave it to a claim. Bar admission and honours are claims too.
 
 ## 6. Certifications

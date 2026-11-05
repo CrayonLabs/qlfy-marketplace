@@ -8,7 +8,7 @@
     {
       "name": "qlfy",
       "source": "./plugins/qlfy",
-      "description": "Find people from a brief: the qlfy connector plus its skills (workflow, system rules, people and company query recipes, recruiter, event, GTM and VC personas).",
+      "description": "Find people from a plain-language brief: candidates to hire, guests to invite, buyers to sell to and founders to back.",
       "keywords": ["people-search", "recruiting", "sourcing", "gtm", "events", "venture", "mcp"]
     }
   ]

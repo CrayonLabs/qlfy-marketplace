@@ -6,7 +6,7 @@ user-invocable: false
 
 # Company recipes
 
-Read core-workflow and people-recipes first. This skill covers briefs that describe companies: target accounts, "people at Series B fintechs", "ex-Stripe", "companies that just hired a CFO".
+Read find-people and people-recipes first. This skill covers briefs that describe companies: target accounts, "people at Series B fintechs", "ex-Stripe", "companies that just hired a CFO".
 
 ## Two routes to people at a kind of company
 
@@ -69,7 +69,7 @@ Describe X's product and customers in the brief rather than naming X, and add "l
 - Alumni ("has worked at one of these"): put the names in `past_company_name` `in` (20 per list; an `or` group holds several lists).
 - More than 200 companies near a place ("engineers at companies around Munich"): skip the list and use `employer_near` in the people query (people-recipes, recipe 9). It takes up to 1,000 of the largest companies in the radius.
 - The employer's HQ is not where the person sits. Add `location_country` or a city list when the user means people who are nearby.
-- Pick the roles per account as the persona says (gtm: the buyer and two or three people around them).
+- Pick the roles per account as the goal needs (selling: the buyer and two or three people around them; see find-people, "Goals").
 
 ## 5. Signals through people
 
