@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.6.0](https://github.com/CrayonLabs/qlfy-marketplace/compare/v0.5.1...v0.6.0) (2026-11-05)
+
+
+### Features
+
+* one find-people skill instead of six ([#14](https://github.com/CrayonLabs/qlfy-marketplace/issues/14)) ([d79a0b5](https://github.com/CrayonLabs/qlfy-marketplace/commit/d79a0b5dd8061949b609e7be194501573fbf1c9a))
+
 ## [0.5.1](https://github.com/CrayonLabs/qlfy-marketplace/compare/v0.5.0...v0.5.1) (2026-11-04)
 
 
