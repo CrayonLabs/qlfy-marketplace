@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.6.1](https://github.com/CrayonLabs/qlfy-marketplace/compare/v0.6.0...v0.6.1) (2026-11-05)
+
+
+### Bug Fixes
+
+* show each search page to the user from a plugin hook ([#18](https://github.com/CrayonLabs/qlfy-marketplace/issues/18)) ([a931a4f](https://github.com/CrayonLabs/qlfy-marketplace/commit/a931a4f4079a33265596387092aa2294a4276565))
+
 ## [0.6.0](https://github.com/CrayonLabs/qlfy-marketplace/compare/v0.5.1...v0.6.0) (2026-11-05)
 
 
