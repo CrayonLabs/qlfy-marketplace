@@ -45,6 +45,8 @@ plugins/qlfy/
   .claude-plugin/plugin.json      name, version, description
   .mcp.json                       the connector URL
   skills/<name>/SKILL.md          the skills
+  hooks/                          shows each search page to the user as a numbered list
+tests/                            node --test for the hooks
 ```
 
 The skills are also the server's: `search-mcp` mounts this repository as a git submodule and serves the same files through `list_skills` and `get_skill`, for clients that do not load plugins.
@@ -58,6 +60,7 @@ Check changes with:
 ```bash
 claude plugin validate .
 claude plugin validate ./plugins/qlfy
+node --test
 ```
 
-CI runs both on every pull request (`validate`).
+CI runs all three on every pull request (`validate`).
