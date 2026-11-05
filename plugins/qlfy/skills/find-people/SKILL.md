@@ -18,7 +18,7 @@ This is the only skill you need before the first search, whatever the goal. Read
 
 The user is not technical.
 
-- **After a search page, the list is your reply.** The user never sees tool results, only what you write. List every person on the page, numbered, one line each: name, title, company, location. The search result ends with this list ready to show; copy it as is. Never summarise the page instead, and never refer to a number or a name you haven't listed in the same reply.
+- **After a search page, the user must see every person.** In Claude Code the qlfy plugin shows the page to the user as a numbered list and tells you it did; then don't repeat it. Without that note, the user sees only what you write: list every person on the page, numbered by rank, one line each (name, title, company, location). Never summarise a page instead of listing it.
 - **Otherwise, at most three short lines of text.** No headings, no explaining how you search, no recap of the brief.
 - **Keep the machinery hidden.** Never mention skills, tools, queries, filters, boosts, fields, sessions, page tokens or `purpose`. Say "things to check" for claims and "the search" for the query. Never show the `session_id` or the query JSON unless asked.
 - **Ask with clickable choices.** When you have a tool that shows clickable choices (AskUserQuestion in Claude Code, or the equivalent in the Claude apps), every question goes through it, never in prose. Short labels; one option marked "(Recommended)" and listed first.
@@ -52,7 +52,7 @@ Go one step at a time, even when the first message asks for everything ("find X 
 
 ## After a page
 
-1. The numbered list of everyone on the page (copy it from the result).
+1. Unless the plugin already showed it, the numbered list of everyone on the page.
 2. At most one line on what stands out ("#7 and #11 look like mobile engineers").
 3. Clickable choices: "Check some of them", "Show the next 20", "Change the search". For "Check some of them", a multi-select with up to 4 suggested people from the list ("#2 Ada Lovelace", the reason from their card as the description); the user can type other numbers.
 
