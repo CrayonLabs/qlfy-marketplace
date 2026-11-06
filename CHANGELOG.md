@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.6.2](https://github.com/CrayonLabs/qlfy-marketplace/compare/v0.6.1...v0.6.2) (2026-11-06)
+
+
+### Bug Fixes
+
+* list each page from reply_first instead of a plugin hook ([#20](https://github.com/CrayonLabs/qlfy-marketplace/issues/20)) ([8ac9cee](https://github.com/CrayonLabs/qlfy-marketplace/commit/8ac9cee8c31d8e01cc709662e3186283bab4c07a))
+
 ## [0.6.1](https://github.com/CrayonLabs/qlfy-marketplace/compare/v0.6.0...v0.6.1) (2026-11-05)
 
 
