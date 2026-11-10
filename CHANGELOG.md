@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.8.0](https://github.com/CrayonLabs/qlfy-marketplace/compare/v0.7.1...v0.8.0) (2026-11-10)
+
+
+### Features
+
+* send the plugin version to the server (QLF-195) ([#26](https://github.com/CrayonLabs/qlfy-marketplace/issues/26)) ([bc78cf3](https://github.com/CrayonLabs/qlfy-marketplace/commit/bc78cf320e50cb2742cc9631f4264e13823b1b33))
+
 ## [0.7.1](https://github.com/CrayonLabs/qlfy-marketplace/compare/v0.7.0...v0.7.1) (2026-11-10)
 
 
