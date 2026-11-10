@@ -4,7 +4,7 @@ Claude Code plugins from CrayonLabs.
 
 | Plugin | What it adds |
 | --- | --- |
-| `qlfy` | Find people from a plain-language brief: candidates to hire, guests to invite, buyers to sell to and founders to back. Adds the qlfy connector (`https://mcp.qlfy.ai/mcp`, sign in with Google) and three skills Claude reads on its own: `find-people` (how to run a search and talk to the user, for every goal) and the `people-recipes` and `company-recipes` query recipes |
+| `qlfy` | Find people from a plain-language brief: candidates to hire, guests to invite, buyers to sell to and founders to back. Adds the qlfy connector (`https://mcp.qlfy.ai/mcp`, sign in with Google) the `/qlfy` command (`/qlfy` followed by who you are looking for), and three skills Claude reads on its own: `find-people` (how to run a search and talk to the user, for every goal) and the `people-recipes` and `company-recipes` query recipes |
 
 ## Install
 
@@ -15,7 +15,7 @@ In Claude Code:
 /plugin install qlfy@crayonlabs
 ```
 
-Then run `/mcp`, pick `qlfy` and sign in. On a machine without a GitHub SSH key, set `CLAUDE_CODE_PLUGIN_PREFER_HTTPS=1` before adding the marketplace.
+Then run `/mcp`, pick `qlfy` and sign in. To start a search, type `/qlfy` followed by who you are looking for, for example `/qlfy senior Go engineers in Dubai with fintech experience` (`/qlfy:qlfy` if another command already uses the name). On a machine without a GitHub SSH key, set `CLAUDE_CODE_PLUGIN_PREFER_HTTPS=1` before adding the marketplace.
 
 ## Updates
 
@@ -47,7 +47,7 @@ plugins/qlfy/
   skills/<name>/SKILL.md          the skills
 ```
 
-The skills are also the server's: `search-mcp` mounts this repository as a git submodule and serves the same files through `list_skills` and `get_skill`, for clients that do not load plugins.
+The skills are also the server's: `search-mcp` mounts this repository as a git submodule and serves the same files through `list_skills` and `get_skill`, for clients that do not load plugins. The `qlfy` skill is the exception: it is a command for people (`disable-model-invocation: true`), and the server leaves it out.
 
 ## Releases
 
