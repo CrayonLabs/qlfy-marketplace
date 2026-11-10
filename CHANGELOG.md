@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.7.1](https://github.com/CrayonLabs/qlfy-marketplace/compare/v0.7.0...v0.7.1) (2026-11-10)
+
+
+### Bug Fixes
+
+* list each page, then one plain line; one question after the overview ([#24](https://github.com/CrayonLabs/qlfy-marketplace/issues/24)) ([9563ab2](https://github.com/CrayonLabs/qlfy-marketplace/commit/9563ab2d8431be9c87648af9191be6c51ff02729))
+
 ## [0.7.0](https://github.com/CrayonLabs/qlfy-marketplace/compare/v0.6.2...v0.7.0) (2026-11-10)
 
 
