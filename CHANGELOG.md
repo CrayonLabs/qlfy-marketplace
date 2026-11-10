@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.7.0](https://github.com/CrayonLabs/qlfy-marketplace/compare/v0.6.2...v0.7.0) (2026-11-10)
+
+
+### Features
+
+* /qlfy command to start a search (QLF-194) ([#22](https://github.com/CrayonLabs/qlfy-marketplace/issues/22)) ([f16fa07](https://github.com/CrayonLabs/qlfy-marketplace/commit/f16fa07c8a3d1c590969b36c6bb2b6ee1a6cc952))
+
 ## [0.6.2](https://github.com/CrayonLabs/qlfy-marketplace/compare/v0.6.1...v0.6.2) (2026-11-06)
 
 
