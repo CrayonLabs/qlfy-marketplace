@@ -4,7 +4,7 @@
       "type": "http",
       "url": "https://mcp.qlfy.ai/mcp",
       "headers": {
-        "X-Qlfy-Plugin-Version": "0.7.1"
+        "X-Qlfy-Plugin-Version": "0.8.0"
       }
     }
   }
