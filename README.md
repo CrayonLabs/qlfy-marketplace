@@ -19,7 +19,7 @@ Then run `/mcp`, pick `qlfy` and sign in. To start a search, type `/qlfy` follow
 
 ## Updates
 
-Auto-update is off for third-party marketplaces until you turn it on: `/plugin` → **Marketplaces** → `crayonlabs` → **Enable auto-update**. Without it, run `/plugin marketplace update crayonlabs`.
+Auto-update is off for third-party marketplaces until you turn it on: `/plugin` → **Marketplaces** → `crayonlabs` → **Enable auto-update**. Without it, run `/plugin marketplace update crayonlabs`. The connector sends the plugin's version in the `X-Qlfy-Plugin-Version` header, and when it is older than the latest release the server's `overview` result reminds you to update.
 
 To turn it on for a team, add this to `.claude/settings.json` (per repository) or managed settings (per organization):
 
@@ -43,7 +43,7 @@ To turn it on for a team, add this to `.claude/settings.json` (per repository) o
 .claude-plugin/marketplace.json   the catalog
 plugins/qlfy/
   .claude-plugin/plugin.json      name, version, description
-  .mcp.json                       the connector URL
+  .mcp.json                       the connector URL and the X-Qlfy-Plugin-Version header
   skills/<name>/SKILL.md          the skills
 ```
 
@@ -51,7 +51,7 @@ The skills are also the server's: `search-mcp` mounts this repository as a git s
 
 ## Releases
 
-Commits on `main` follow [Conventional Commits](https://www.conventionalcommits.org). Release Please opens a release PR that bumps `plugins/qlfy/.claude-plugin/plugin.json`; merging it tags the release, and users receive the new version on their next update. The version lives only in `plugin.json`, as Claude Code expects.
+Commits on `main` follow [Conventional Commits](https://www.conventionalcommits.org). Release Please opens a release PR that bumps `plugins/qlfy/.claude-plugin/plugin.json` and the `X-Qlfy-Plugin-Version` header in `plugins/qlfy/.mcp.json`; merging it tags the release, and users receive the new version on their next update. Set the version by hand only in `plugin.json`, as Claude Code expects; Release Please keeps the header in step, and CI fails if the two differ. The server learns the latest version when `search-mcp` bumps its `marketplace` submodule, and from then on tells older plugins to update.
 
 Check changes with:
 
