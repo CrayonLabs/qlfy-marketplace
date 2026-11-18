@@ -1,5 +1,17 @@
 # Changelog
 
+## [0.9.0](https://github.com/CrayonLabs/qlfy-marketplace/compare/v0.8.0...v0.9.0) (2026-11-18)
+
+
+### Features
+
+* README and MIT license so the plugin can be listed in the Claude directory ([#29](https://github.com/CrayonLabs/qlfy-marketplace/issues/29)) ([e56a99d](https://github.com/CrayonLabs/qlfy-marketplace/commit/e56a99d80bc24f665ae240b288ba1793f89a7dd8))
+
+
+### Bug Fixes
+
+* plain replies - short bullets, linked names, Yes/No/Can't tell (QLF-201) ([#28](https://github.com/CrayonLabs/qlfy-marketplace/issues/28)) ([fe0c75f](https://github.com/CrayonLabs/qlfy-marketplace/commit/fe0c75f1d716acacedcc68401914ac7906419389))
+
 ## [0.8.0](https://github.com/CrayonLabs/qlfy-marketplace/compare/v0.7.1...v0.8.0) (2026-11-10)
 
 
