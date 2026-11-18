@@ -8,6 +8,8 @@ Claude Code plugins from CrayonLabs.
 
 ## Install
 
+On claude.ai, Claude Desktop, Cowork or Claude mobile, don't use this marketplace: add the qlfy connector from your Claude connector settings instead. The steps are at [mcp.qlfy.ai/setup](https://mcp.qlfy.ai/setup#claude). The Code tab in Claude Desktop runs Claude Code, so the commands below work there too.
+
 In Claude Code:
 
 ```text
@@ -42,7 +44,9 @@ To turn it on for a team, add this to `.claude/settings.json` (per repository) o
 ```text
 .claude-plugin/marketplace.json   the catalog
 plugins/qlfy/
-  .claude-plugin/plugin.json      name, version, description
+  .claude-plugin/plugin.json      name, version, description, license
+  README.md                       what the plugin adds and sends (the directory listing reads it)
+  LICENSE                         MIT
   .mcp.json                       the connector URL and the X-Qlfy-Plugin-Version header
   skills/<name>/SKILL.md          the skills
 ```

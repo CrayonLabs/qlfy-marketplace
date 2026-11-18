@@ -7,6 +7,7 @@
   },
   "homepage": "https://github.com/CrayonLabs/qlfy-marketplace",
   "repository": "https://github.com/CrayonLabs/qlfy-marketplace",
+  "license": "MIT",
   "keywords": [
     "people-search",
     "recruiting",
